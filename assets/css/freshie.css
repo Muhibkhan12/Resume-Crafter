@@ -1,0 +1,158 @@
+ :root {
+            --primary: #6c5ce7;
+            --secondary: #a5b1c2;
+            --primary-light: #a29bfe;
+            --accent: #fd79a8;
+            --dark: #2d3436;
+            --light: #f5f6fa;
+            --text-light: #f9f9ff;
+            --border: 1px solid #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .resume-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: var(--border);
+            padding-bottom: 1.5rem;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-light);
+            margin-right: 2rem;
+        }
+
+        .no-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            text-align: center;
+            border: 3px dashed var(--secondary);
+        }
+
+        .header-text h1 {
+            color: var(--primary);
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+        }
+
+        .contact-info {
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        .contact-info p {
+            margin: 0.3rem 0;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.4rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .education-item, .diploma-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .institution {
+            font-weight: bold;
+            display: block;
+        }
+
+        .duration {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-light);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .action-buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action-buttons a, .action-buttons button {
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .edit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: 1px solid var(--primary);
+        }
+
+        .download-btn {
+            background-color: white;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .edit-btn:hover {
+            background-color: #5a4bd1;
+        }
+
+        .download-btn:hover {
+            background-color: var(--light);
+        }
+        
